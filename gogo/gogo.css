@@ -268,12 +268,11 @@ i {
   width: 1200px;
   justify-content: start;
   overflow: scroll;
+  scrollbar-width: none;
   gap: 10px;
 }
-a{
-  border-radius: 5px;
-}
 .Story {
+  flex-shrink: 0;
   width: 200px;
   height: 300px;
   display: flex;
@@ -281,6 +280,7 @@ a{
   justify-content: space-between;
   overflow: hidden;
   position: relative;
+  border-radius: 15px;
 }
 .StoryHead {
   display: flex;
@@ -356,7 +356,7 @@ a{
 }
 .HighlightNews {
   width: 30%;
-  margin:0 auto;
+  margin: 0 auto;
 }
 .blue-box {
   color: #007aff;
@@ -442,12 +442,12 @@ a{
   color: white;
   visibility: hidden;
 }
-.Sec3News:hover img{
+.Sec3News:hover img {
   transform: scale(1.1);
   transition: all 0.5s ease-in;
 }
-.Sec3News-img:hover .blackSc , img{
+.Sec3News-img:hover .blackSc,
+img {
   visibility: visible;
   cursor: pointer;
 }
-
