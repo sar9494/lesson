@@ -1,0 +1,425 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Helvetica Neue, sans-serif, Arial;
+}
+.bigSection1 {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(white, rgb(243, 245, 246));
+}
+img {
+  border-radius: 5px;
+}
+.header {
+  margin: 30px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1200px;
+}
+#headerSec1 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#headerSec2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.logo {
+  width: 120px;
+}
+button {
+  background-color: white;
+  border: none;
+}
+.searchIcon {
+  width: 40px;
+  height: 40px;
+}
+.but1 {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+.but2 {
+  width: 90px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h3 {
+  font-size: 20px;
+}
+.view {
+  display: flex;
+  align-items: center;
+}
+.redDot {
+  border: 5px solid;
+  border-color: red;
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+}
+.boxHeaderIn {
+  width: 90px;
+  margin: 5px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.boxHeader {
+  text-align: right;
+  width: 100px;
+  height: 70px;
+}
+.downMenu {
+  height: 15px;
+  width: 15px;
+}
+.headerSec2Img {
+  width: 20px;
+  height: 20px;
+}
+.Sec1 {
+  font-family: Helvetica Neue, sans-serif, Arial;
+
+  background-color: rgb(232, 227, 227);
+  display: flex;
+  width: 90vw;
+  height: 420px;
+  max-width: 1200px;
+  border-radius: 10px;
+  background: linear-gradient(90deg in oklab, rgb(243, 245, 246), white);
+}
+.sec1text {
+  margin: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 50%;
+}
+.sec1Button {
+  width: 100px;
+  height: 40px;
+  color: white;
+  border-radius: 20px 20px;
+  background: linear-gradient(
+    90deg in oklab,
+    rgb(207, 8, 8),
+    rgb(244, 126, 15)
+  );
+}
+.sec1Button:hover {
+  width: 120px;
+  transition: 1s ease-in-out;
+}
+.shareButton:hover .rote {
+  transform: rotate(45deg) scale(1.13);
+  transition: all 0s;
+}
+.shareButton {
+  width: 50px;
+  height: 30px;
+  background-color: #f0efef;
+  border-radius: 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.shareButton:hover {
+  transform: scale(1.2);
+  background-color: white;
+  transition: all 0.4s ease-in-out;
+  width: 70px;
+}
+.Icon {
+  width: 30px;
+  height: 30px;
+}
+.sec1photo {
+  border-radius: 5px;
+  width: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.BlackScreen {
+  width: 580px;
+  height: 420px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.sec1photo:hover .BlackScreen {
+  visibility: visible;
+}
+.sec1photo img {
+  width: 100%;
+  height: 200px;
+}
+.newsPhotBox {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 200px;
+}
+.newsPhoto {
+  border-radius: 5px;
+  height: 200px;
+  overflow: hidden;
+}
+.sec1photo:hover img {
+  transform: scale(1.02);
+  transition: 0.4s ease-in-out;
+}
+.Sec2 {
+  margin-top: 40px;
+  width: 90vw;
+  max-width: 1200px;
+  height: 400px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+a {
+  text-decoration: none;
+  color: gray;
+  display: flex;
+}
+i {
+  color: gray;
+}
+.Sec2SmallNews {
+  width: 25%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.BlackScreen2 {
+  width: 285px;
+  height: 200px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.Sec2SmallNews:hover .BlackScreen2 {
+  visibility: visible;
+  cursor: pointer;
+}
+.Sec2SmallNews:hover img {
+  transform: scale(1.05);
+  transition: 0.4s ease-in-out;
+}
+.newsFoot {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+.timeIcon {
+  height: 20px;
+  width: 20px;
+}
+
+.gogoStory {
+  margin: 50px auto;
+  color: white;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.StoryBody {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  overflow: scroll;
+  gap: 10px;
+}
+.Story {
+  width: 200px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
+}
+.StoryHead {
+  display: flex;
+  align-items: end;
+  margin: 20px 0;
+}
+.storyPhoto {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  border-radius: 5px;
+}
+.storyText {
+  height: 40px;
+  margin: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+.GPhoto {
+  width: 35px;
+  height: 35px;
+  margin: 15px;
+}
+.seen {
+  color: white;
+}
+.StorySeen {
+  margin: 15px;
+  display: flex;
+  gap: 5px;
+}
+.storyFoot {
+  background: linear-gradient(
+    rgba(45, 45, 46, 0.3),
+    rgba(9, 9, 28, 0.3),
+    rgba(0, 0, 0, 0.3)
+  );
+  border-radius: 5px;
+}
+.Story:hover .storyPhoto {
+  transform: scale(1.1);
+  transition: 0.4s ease-in;
+}
+.Story:hover .storyText {
+  height: auto;
+}
+
+.bigSection3{
+  margin: 10px auto;
+  width: 1200px;
+  display: flex;
+}
+.Today{
+  width: 70%;
+}
+.Sec3Head {
+  display: flex;
+  gap: 10px;
+}
+.Sec3Body{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 10px;
+}
+.Sec3News {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+.HighlightNews{
+  width: 30%;
+}
+.blue-box {
+  color: #007aff;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.gray-box {
+  color: #efefef;
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  gap: 2px;
+  align-items: center;
+}
+.gray-box:hover p {
+  color: #007aff;
+  transition: all 0.5s;
+}
+.gray-box:hover .chop {
+  background-color: #007aff;
+  transition: all 0.5s;
+}
+.chopBlue {
+  width: 110px;
+  height: 7px;
+  background-color: #007aff;
+  border-radius: 3.5px;
+}
+.chop {
+  width: 100px;
+  height: 7px;
+  background-color: #efefef;
+  border-radius: 3.5px;
+}
+
+
+.menu {
+  width: 30px;
+  height: 30px;
+  background-color: #efefef;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.menu:hover {
+  background-color: #007aff;
+
+  transition: all 0.5s;
+}
+.menu:hover svg {
+  stroke: white;
+  transition: all 0.5s;
+}
+.Sec3News-img {
+  width: 30%;
+  position: relative;
+}
+.Sec3News-img img{
+  height: 150px;
+}
+.blackSc{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: inherit;
+}

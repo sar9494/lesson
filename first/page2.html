@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>PineTour</title>
+        <style>
+            body{
+                height: 100vh;
+            }
+            .header {
+            display: flex;
+            align-items: center;
+            flex-direction: column ;
+            justify-content: center;
+            background-color: black;
+            margin: 0%;
+            height: 10vh;
+        }
+        .headerText {
+            color: white;
+            margin: 0px;
+            font-size: 16px;
+            font-family: "Lexend Deca", sans-serif;
+        }
+        .greenDot{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+            .but1{
+                background-color: white;
+                border-radius: 3px;
+                margin-top: 50px;
+                padding: 20px 40px 20px 40px;
+                border: none;
+            }
+            .bot1{
+            border: solid black;
+            display: flex; 
+            margin: auto; 
+            background-color: rgb(60, 58, 58); 
+            width: 150px;
+            height: 30px; 
+            border-radius: 5px;
+        }
+        .faceIns{
+            display: flex;
+        }
+        .bot1:hover{
+            border: 1px solid green;
+        }
+        @media screen and (max-width:670px){
+            .faceIns{
+            display: block;
+        }
+        .bot1{
+            width: 130px;
+        }
+        }
+        .namePine {
+            text-align: center;
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .footer {
+            display: flex;
+            justify-content: space-around;
+            background-color: black;
+            height: 5vh;
+            padding: 30px;
+            color: white;
+        }
+        .contact{
+            display:  flex; 
+            justify-content: space-around; 
+            padding-top: 50px;
+            height: 60vh;
+        }
+        .Footerbutton {
+            border: solid black;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: rgb(60, 58, 58);
+            width: 150px;
+            height: 30px;
+            border-radius: 5px;
+            color: white;
+        }
+        .footerLogo {
+            width: 20px;
+            height: 20px;
+            float: left;
+            margin: 0px;
+        }
+
+        </style>
+    </head>
+    <body style="margin: 0px; background-color: #F4F4F4;">
+        <div class="header">
+            <h1 class="headerText">pine &nbsp; </h1>
+            <div class="greenDot">
+                <h1 class="headerText">tour</h1>
+                <h1 style="color:#18BA51; margin: 0%; font-size:larger; font-family:'Courier New', Courier, monospace;">.</h1>
+            </div>
+        </div>
+        <div class="namePine">
+            <h1>Order your trip</h1>
+            <p>Choose your plan</p>
+            
+                <div style=" display: flex;">
+                <button class="but1" style="margin-left: auto; margin-right: 10px; margin-top: 10px;" >
+                    Starter Pack
+                </button>
+                <button class="but1" style="margin-right: auto;margin-top: 10px;">
+                    Luxury Pack
+                </button>
+            </div>
+        </div>
+        <div class="contact">
+            <h4 >Contact Information</h4>
+        </div>
+        <div class="footer">
+            <div>
+                <h1 class="headerText">Pine</h1>
+                <h1 class="headerText">Tour.</h1>
+            </div>
+            <div class="faceIns" >
+                <button class="Footerbutton">
+                        <img class="footerLogo" src="Frame.png" alt="">
+                        <h3 style="margin: 0px;">Facebook</h3>
+    
+                </button>
+                <button class="Footerbutton">
+                        <img class="footerLogo" src="Frame (1).png" alt="">
+                        <h3 style="margin: 0px;">Instagram</h3>
+                </button>
+            </div>
+    
+        </div>
+    </body>
+</html>
