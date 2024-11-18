@@ -383,6 +383,7 @@ i {
   margin: 10px auto;
   width: 1200px;
   display: flex;
+  gap: 50px;
 }
 
 .Today {
@@ -411,6 +412,7 @@ i {
 .HighlightNews {
   width: 30%;
   margin: 0 auto;
+  border-left: rgb(167, 167, 167) solid 1px;
 }
 
 .blue-box {
@@ -525,7 +527,39 @@ img {
   flex-direction: column;
   justify-content: space-around;
   gap: 10px;
+  padding: 15px;
 }
+.voteTable{
+  display: flex;
+  flex-direction: column;
+}
+.vote{
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+.size{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.size img{
+  height: 30px;
+}
+label{
+  background-color: #60a0e6;
+  color: #fff;
+    font-weight: 700;
+    display: block;
+    border: 1px solid #0e70ee;
+    border-bottom: none;
+    padding: 15px 10px;
+    width: 80%;
+}
+label:hover{
+  background-color: #0658af;
+}
+
 .Highlighthead{
   display: flex;
   justify-content: start;
