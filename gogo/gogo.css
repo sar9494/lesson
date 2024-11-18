@@ -676,6 +676,7 @@ label:hover{
   display: flex;
   flex-direction: column;
   justify-content: end;
+  border-radius: 5px;
 }
 .sec4Part2{
   width: 50%;
@@ -686,7 +687,7 @@ label:hover{
 .Bgroung{
   position: absolute;
   width: 100%;
-  height: 400px;
+  height: 396px;
   border-radius: 5px;
   background:linear-gradient(rgba(0, 0, 0 ,0),rgba(0 ,0 ,0 ,0.5));
   z-index: -1;
@@ -704,14 +705,11 @@ label:hover{
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-.topic{
-  color: white;
-  background-color: #407ce8;
-  padding: 5px 10px ;
-  border-radius: 5px;
-}
 span{
   width: fit-content;
+  padding: 5px 10px ;
+  border-radius: 5px;
+  background-color: #407ce8;
 }
 .del{
   display: flex;
@@ -737,7 +735,41 @@ hr{
 }
 .part2{
   width: 48%;
+  height: 180px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  overflow: hidden;
+  border-radius: 5px;
 }
 .part2 img{
   width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: -2;
+}
+.part2Text{
+  width: 80%;
+  margin: 0px auto;
+}
+.part2:hover .part2Text{
+  opacity: 0.6;
+}
+.part2 p{
+  height: 40px;
+  overflow: hidden;
+  font-size: 14px;
+}
+.part2 span{
+  font-size: 12px;
+}
+.part2:hover img{
+  transform: scale(1.1);
+  transition: all 0.4s ease-in-out;
+}
+.part2:hover p{
+  height: auto;
+  transition: all 0.4s ease-in-out;
 }
