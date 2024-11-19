@@ -769,8 +769,8 @@ hr{
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-.part2:hover .sec4Text{
-  opacity: 0.5;
+.part2:hover .part2Text{
+  opacity: 0.8;
 }
 .part2:hover p{
   height: auto;
