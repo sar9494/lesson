@@ -49,6 +49,7 @@ img {
 
 .logo {
   width: 120px;
+  height: 50px;
 }
 
 button {
@@ -185,22 +186,7 @@ h3 {
   position: relative;
 }
 
-.BlackScreen {
-  width: 580px;
-  height: 420px;
-  color: white;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0px;
-  bottom: 0;
-  visibility: hidden;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.sec1photo:hover .BlackScreen {
+.sec1photo:hover .blacky {
   visibility: visible;
 }
 
@@ -243,6 +229,7 @@ a {
   text-decoration: none;
   color: gray;
   display: flex;
+  align-items: center;
 }
 
 i {
@@ -256,22 +243,7 @@ i {
   position: relative;
 }
 
-.BlackScreen2 {
-  width: 290px;
-  height: 210px;
-  border-radius: 5px;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  visibility: hidden;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.Sec2SmallNews:hover .BlackScreen2 {
+.Sec2SmallNews:hover .blacky {
   visibility: visible;
   cursor: pointer;
 }
@@ -495,27 +467,12 @@ i {
   height: 150px;
 }
 
-.blackSc {
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  width: 225px;
-  height: 150px;
-  top: 0;
-  bottom: 0;
-  border-radius: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  visibility: hidden;
-}
-
 .Sec3News:hover img {
   transform: scale(1.1);
   transition: all 0.5s ease-in;
 }
 
-.Sec3News-img:hover .blackSc,img {
+.Sec3News-img:hover .blacky,img {
   visibility: visible;
   cursor: pointer;
 }
@@ -610,7 +567,7 @@ label:hover{
   transform: scale(1.1);
   transition: all 0.5s;
 }
-.Photo:hover .BlackScreen2{
+.Photo:hover .blacky{
   visibility: visible;
 }
 .trendNews{
@@ -655,6 +612,7 @@ label:hover{
   transform: scale(1.01);
   transition: all 0.1s ease-in-out;
 }
+
 .bigSection4{
   width: 1200px;
 }
@@ -705,11 +663,12 @@ label:hover{
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-span{
+.bigSection4 span{
   width: fit-content;
   padding: 5px 10px ;
   border-radius: 5px;
   background-color: #407ce8;
+  color: white;
 }
 .del{
   display: flex;
@@ -775,4 +734,204 @@ hr{
 .part2:hover p{
   height: auto;
   transition: all 0.4s ease-in-out;
+}
+
+.hevMayg{
+  max-width: 1200px;
+  margin: 30px auto;
+}
+.headers{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.bodies{
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  gap: 10px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.part{
+  width: 25%;
+  border: gray 1px solid;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.part-img{
+  height:200px;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+.part img{
+  width: 100%;
+  border-radius: 0;
+}
+.part p{
+  width: 90%;
+  margin: 0px auto;
+  padding: 10px 0;
+}
+.part .newsFoot{
+ width: 90%;
+ margin: 0 auto;
+ border-top: rgb(219, 219, 219) solid 1px;
+}
+.part .newsFoot p{
+  border:hidden;
+  padding: 0;
+}
+.part:hover .part-text{
+  background-color: rgb(240, 240, 240);
+}
+.part-img:hover img{
+  transform: scale(1.1);
+  transition: all 0.1s ease-in-out;
+}
+
+.technology{
+  max-width: 1200px;
+  margin: 30px 0;
+}
+.blacky{
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+}
+.part-img:hover .blacky{
+  visibility: visible;
+}
+ 
+.comic{
+  max-width: 1200px;
+}
+.comic .part{
+  width: 50%;
+}
+.part-img img{
+  height: 200px;
+}
+.part-text{
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comic .part-text{
+  height: 100px;
+}
+
+.watch{
+  width: 100%;
+  background-color: black;
+  color: rgb(181, 181, 181);
+}
+.watch .headers{
+  color: white;
+}
+.watch-container{
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+}
+.watch-body{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.watch .part-img img{
+  height: 180px;
+  border-radius: 5px;
+}
+.watch .part-img {
+  height: 180px;
+  border-radius: 5px;
+  position: relative;
+}
+.watch .part-img .watch-Icon{
+  position: absolute;
+  top: -10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  width: 60px;
+  z-index: 2;
+}
+.watch .part{
+  width: 24%;
+  border: none;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.part .watch-text{
+  width: 100%;
+}
+.watch .newsFoot{
+  border: none;
+  width: 100%;
+}
+.watch .part-text{
+  height: 90px;
+}
+.watch:hover .part-text{
+  background-color: transparent;
+}
+.part-img:hover .watch-Icon{
+  transform: scale(1);
+}
+
+.footer{
+  max-width: 1000px;
+  margin: 20px 0;
+}
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid rgb(185, 185, 185);
+}
+.info{
+  display: flex;
+  width: 80%;
+  justify-content: end;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info-box {
+  display: flex;
+  gap: 5px;
+}
+.info-box img{
+  height: 20px;
+  width: 20px;
+}
+.bottom-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0 ;
+}
+.links{
+  display: flex;
+  gap: 10px;
+}
+.links svg{
+  opacity: 0.3;
+}
+svg:hover{
+  opacity: 1;
 }
