@@ -6,6 +6,7 @@
 body {
   display: flex;
   flex-direction: column;
+  width: 100%;
   align-items: center;
   font-family: Helvetica Neue, sans-serif, Arial;
 }
@@ -27,7 +28,7 @@ img {
   margin: 30px auto;
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
 }
@@ -38,6 +39,7 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 
 #headerSec2 {
@@ -76,8 +78,8 @@ button {
   align-items: center;
 }
 
-h3 {
-  font-size: 20px;
+.header h3 {
+  font-size: 18px;
 }
 
 .view {
@@ -106,6 +108,9 @@ h3 {
   width: 100px;
   height: 70px;
 }
+.boxHeader p{
+  font-size: 12px;
+}
 
 .downMenu {
   height: 15px;
@@ -122,7 +127,6 @@ h3 {
 
   background-color: rgb(232, 227, 227);
   display: flex;
-  width: 90vw;
   height: 420px;
   max-width: 1200px;
   border-radius: 10px;
@@ -215,9 +219,58 @@ h3 {
   transition: 0.4s ease-in-out;
 }
 
+.hidden-part{
+  width: 100%;
+  display: none;
+}
+.hidden-top{
+  width: 100%;
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+.hidden-bottom{
+  display: flex;
+  color: white;
+  width: 100%;
+}
+.hide{
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.hide-img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+}
+.hide-text{
+  width: 90%;
+  margin: 20px auto;
+}
+.hide .sec1Button:hover{
+  transform: scale(1.1);
+}
+.hidden-bottom button{
+  width: 33%;
+  color: white;
+  background-color: rgb(29, 29, 29) ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .Sec2 {
   margin-top: 40px;
-  width: 90vw;
   max-width: 1200px;
   height: 400px;
   display: flex;
@@ -269,7 +322,7 @@ i {
 .gogoStory {
   margin: 50px auto;
   color: white;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -353,7 +406,7 @@ i {
 
 .bigSection3 {
   margin: 10px auto;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   gap: 50px;
 }
@@ -464,7 +517,8 @@ i {
 }
 
 .Sec3News-img img {
-  height: 150px;
+  width: 100%;
+  height: 100%;
 }
 
 .Sec3News:hover img {
@@ -497,9 +551,11 @@ i {
   background-color: white;
   color: #0e70ee;
 }
+
 .VoteSection{
   background-color: #007aff;
-  color: white;
+  color: white; 
+  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -518,6 +574,7 @@ i {
   gap: 20px;
   justify-content: space-between;
 }
+
 .size{
   display: flex;
   align-items: center;
@@ -614,7 +671,7 @@ label:hover{
 }
 
 .bigSection4{
-  width: 1200px;
+  max-width: 1200px;
 }
 .sec4Head{
   display: flex;
@@ -645,7 +702,7 @@ label:hover{
 .Bgroung{
   position: absolute;
   width: 100%;
-  height: 396px;
+  height: 100%;
   border-radius: 5px;
   background:linear-gradient(rgba(0, 0, 0 ,0),rgba(0 ,0 ,0 ,0.5));
   z-index: -1;
@@ -654,6 +711,7 @@ label:hover{
 }
 .sec4Part1 img{
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -704,6 +762,7 @@ hr{
 }
 .part2 img{
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -754,7 +813,7 @@ hr{
   scrollbar-width: none;
 }
 .part{
-  width: 25%;
+  width: 24%;
   border: gray 1px solid;
   border-radius: 5px;
   overflow: hidden;
@@ -817,7 +876,7 @@ hr{
   max-width: 1200px;
 }
 .comic .part{
-  width: 50%;
+  width: 49%;
 }
 .part-img img{
   height: 200px;
@@ -841,7 +900,7 @@ hr{
   color: white;
 }
 .watch-container{
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 20px auto;
   display: flex;
   flex-direction: column;
@@ -896,7 +955,7 @@ hr{
 }
 
 .footer{
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 20px 0;
 }
 .top-section{
@@ -934,4 +993,17 @@ hr{
 }
 svg:hover{
   opacity: 1;
+}
+
+@media screen and (max-width: 1200px) {
+  .but2 , .but1 ,  .Sec1 , .HighlightNews , .trendNews , .Sec3Head , .Sec2 {
+    display: none;
+  }
+  .bigSection1{
+    background: none;
+  }
+  .hidden-part{
+    display: block;
+  }
+  
 }
