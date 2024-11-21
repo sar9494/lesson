@@ -10,7 +10,13 @@ body {
   align-items: center;
   font-family: Helvetica Neue, sans-serif, Arial;
 }
-
+.container{
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 30px;
+}
 .bigSection1 {
   display: flex;
   width: 100%;
@@ -320,7 +326,8 @@ i {
 }
 
 .gogoStory {
-  margin: 50px auto;
+  width: 100%;
+  margin: 0px auto;
   color: white;
   max-width: 1200px;
   display: flex;
@@ -328,26 +335,17 @@ i {
   overflow: hidden;
 }
 
-.StoryBody {
-  display: flex;
-  margin: 0 auto;
-  width: 1200px;
-  justify-content: start;
-  overflow: scroll;
-  scrollbar-width: none;
-  gap: 10px;
-}
 
 .Story {
   flex-shrink: 0;
-  width: 200px;
+  width: 15.8%;
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
   position: relative;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .StoryHead {
@@ -357,8 +355,8 @@ i {
 }
 
 .storyPhoto {
-  width: 200px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: absolute;
   z-index: -1;
@@ -405,7 +403,8 @@ i {
 }
 
 .bigSection3 {
-  margin: 10px auto;
+  width: 100%;
+  margin: 0px auto;
   max-width: 1200px;
   display: flex;
   gap: 50px;
@@ -421,13 +420,15 @@ i {
 }
 
 .Sec3Body {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 30px;
   gap: 30px;
 }
 
 .Sec3News {
+  width: 100%;
   color: black;
   display: flex;
   justify-content: space-around;
@@ -509,7 +510,7 @@ i {
 }
 
 .Sec3News-img {
-  width: 80%;
+  width: 50%;
   height: 150px;
   border-radius: 5px;
   position: relative;
@@ -532,8 +533,12 @@ i {
 }
 .Sec3News-Text{
   display: flex;
+  width: 80%;
   flex-direction: column;
   justify-content: space-around;
+}
+.Sec3News p{
+  font-size: 14px;
 }
 .More{
   background-color: rgb(241, 241, 241);
@@ -555,7 +560,6 @@ i {
 .VoteSection{
   background-color: #007aff;
   color: white; 
-  width: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -671,7 +675,9 @@ label:hover{
 }
 
 .bigSection4{
+  margin: 10px auto;
   max-width: 1200px;
+  width: 100%;
 }
 .sec4Head{
   display: flex;
@@ -709,19 +715,19 @@ label:hover{
   top: 0;
   bottom: 0;
 }
-.sec4Part1 img{
+.sec4Part1 img , .part2 img{
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: -2;
+  z-index: -1;
 }
 .sec4Part1:hover img{
   transform: scale(1.1);
   transition: all 0.4s ease-in-out;
 }
-.bigSection4 span{
+.bigSection4 span , .hevMayg span{
   width: fit-content;
   padding: 5px 10px ;
   border-radius: 5px;
@@ -752,21 +758,12 @@ hr{
 }
 .part2{
   width: 48%;
-  height: 190px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: end;
   overflow: hidden;
   border-radius: 5px;
-}
-.part2 img{
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: -2;
 }
 .part2Text{
   width: 80%;
@@ -797,7 +794,8 @@ hr{
 
 .hevMayg{
   max-width: 1200px;
-  margin: 30px auto;
+  margin: 10px auto;
+  width: 100%;
 }
 .headers{
   display: flex;
@@ -853,7 +851,7 @@ hr{
 
 .technology{
   max-width: 1200px;
-  margin: 30px 0;
+  width: 100%;
 }
 .blacky{
   color: white;
@@ -874,6 +872,7 @@ hr{
  
 .comic{
   max-width: 1200px;
+  width: 100%;
 }
 .comic .part{
   width: 49%;
@@ -893,21 +892,15 @@ hr{
 
 .watch{
   width: 100%;
+  padding: 30px;
   background-color: black;
   color: rgb(181, 181, 181);
 }
 .watch .headers{
   color: white;
 }
-.watch-container{
-  max-width: 1200px;
-  margin: 20px auto;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 30px;
-}
 .watch-body{
+  margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -929,7 +922,7 @@ hr{
   right: 0;
   height: 60px;
   width: 60px;
-  z-index: 2;
+  z-index: 1;
 }
 .watch .part{
   width: 24%;
@@ -995,15 +988,108 @@ svg:hover{
   opacity: 1;
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width:1200px) {
   .but2 , .but1 ,  .Sec1 , .HighlightNews , .trendNews , .Sec3Head , .Sec2 {
     display: none;
   }
   .bigSection1{
     background: none;
   }
+  .bigSection1 .container {
+    margin: 0;
+  }
+  .header{
+    padding: 5px;
+    width: 25%;
+    margin: 0;
+    gap: 10px;
+  }
+  .logo{
+  width: 80px;
+  height: 40px;
+  }
+  #headerSec2{
+    gap: 5px;
+  }
+  .boxHeader{
+    border: 1px solid rgb(178, 176, 176);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 8px;
+  height: 50px;
+  }
   .hidden-part{
     display: block;
   }
-  
+  .StoryBody{
+    width: 100%;
+  }
+  .Today{
+    width: 100%;
+  }
+  .Story , .part{
+    width: 32.5%;
+  }
+  .watch .part{
+    width: 49%;
+  }
+  .bigSection4 .sec4Body{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sec4Part1{
+    width: 60%;
+  }
+  .sec4Part2{
+    width: 90%;
+    height: 380px;
+  }
+}
+@media (max-width:640px){
+  .Story , .part{
+    width: 48%;
+  }
+  .comic .part{
+    width: 98%;
+  }
+  .sec4Part1{
+    width: 80%;
+  }
+  .sec4Part2{
+    width: 100%;
+    justify-content: center;
+  }
+  .part2{
+    width: 80%;
+    height: 200px;
+  }
+  .watch .part{
+    width: 80%;
+  }
+  .top-section{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .info{
+    justify-content: center;
+  }
+  .bottom-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  .bigSection3 p{
+    display: none;
+  }
+  .newsFoot p{
+    display: block;
+  }
+  .bigSection3 h3{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(19, 19, 19);
+  }
 }
