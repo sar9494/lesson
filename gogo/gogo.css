@@ -25,6 +25,13 @@ body {
   align-items: center;
   background: linear-gradient(white, rgb(243, 245, 246));
 }
+.bigSection1 .container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 img {
   border-radius: 5px;
@@ -409,7 +416,10 @@ i {
   display: flex;
   gap: 50px;
 }
-
+.bigSection3 .container{
+  display: flex;
+  flex-direction: row;
+}
 .Today {
   width: 70%;
 }
@@ -556,6 +566,18 @@ i {
   background-color: white;
   color: #0e70ee;
 }
+.addvertisement{
+  display: none;
+  height:70vh ;
+  width: 100%;
+  border-top: dashed rgb(176, 176, 176);
+  padding: 5px;
+  color: gray;
+}
+.addvertisement img{
+  height:100% ;
+  width: 100%;
+}
 
 .VoteSection{
   background-color: #007aff;
@@ -692,7 +714,7 @@ label:hover{
 .sec4Part1{
   width: 50%;
   position: relative;
-  height: 400px;
+  height: 45vh;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -998,6 +1020,18 @@ svg:hover{
   .bigSection1 .container {
     margin: 0;
   }
+  .bigSection1 .container {
+    align-items: start;
+  }
+  .VoteSection{
+    order:-1;
+  }
+  .order-top{
+    order: -3;
+  }
+  .order-bottom{
+    order: -2;
+  }
   .header{
     padding: 5px;
     width: 25%;
@@ -1030,6 +1064,10 @@ svg:hover{
   .Today{
     width: 100%;
   }
+  .addvertisement{
+  display: block;
+  order: -3;
+  }
   .Story , .part{
     width: 32.5%;
   }
@@ -1043,9 +1081,8 @@ svg:hover{
   .sec4Part1{
     width: 60%;
   }
-  .sec4Part2{
+  .sec4Part2 {
     width: 90%;
-    height: 380px;
   }
 }
 @media (max-width:640px){
@@ -1059,12 +1096,15 @@ svg:hover{
     width: 80%;
   }
   .sec4Part2{
-    width: 100%;
-    justify-content: center;
+    height: fit-content;
+  }
+  .sec4Part2 {
+    width: 90%;
+    height: 25vh;
   }
   .part2{
     width: 80%;
-    height: 200px;
+    height: 25vh;
   }
   .watch .part{
     width: 80%;
