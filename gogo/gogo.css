@@ -11,7 +11,8 @@ body {
   font-family: Helvetica Neue, sans-serif, Arial;
 }
 .container{
-  width: 100%;
+  width: 97%;
+  max-width: 1200px;
   margin: 0px auto;
   display: flex;
   flex-direction: column;
@@ -26,8 +27,8 @@ body {
   background: linear-gradient(white, rgb(243, 245, 246));
 }
 .bigSection1 .container {
+  width: 97%;
   display: flex;
-  width: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -273,7 +274,7 @@ button {
   transform: scale(1.1);
 }
 .hidden-bottom button{
-  width: 33%;
+  width: 33.33%;
   color: white;
   background-color: rgb(29, 29, 29) ;
   display: flex;
@@ -303,10 +304,13 @@ i {
 }
 
 .Sec2SmallNews {
-  width: 25%;
+  width: 26%;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
+}
+.Sec2SmallNews img{
+  width: 100%;
 }
 
 .Sec2SmallNews:hover .blacky {
@@ -336,7 +340,6 @@ i {
   width: 100%;
   margin: 0px auto;
   color: white;
-  max-width: 1200px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -412,7 +415,6 @@ i {
 .bigSection3 {
   width: 100%;
   margin: 0px auto;
-  max-width: 1200px;
   display: flex;
   gap: 50px;
 }
@@ -569,9 +571,8 @@ i {
 .addvertisement{
   display: none;
   height:70vh ;
-  width: 100%;
+  width: 97%;
   border-top: dashed rgb(176, 176, 176);
-  padding: 5px;
   color: gray;
 }
 .addvertisement img{
@@ -696,11 +697,6 @@ label:hover{
   transition: all 0.1s ease-in-out;
 }
 
-.bigSection4{
-  margin: 10px auto;
-  max-width: 1200px;
-  width: 100%;
-}
 .sec4Head{
   display: flex;
   align-items: center;
@@ -723,6 +719,7 @@ label:hover{
 }
 .sec4Part2{
   width: 50%;
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -814,11 +811,6 @@ hr{
   transition: all 0.4s ease-in-out;
 }
 
-.hevMayg{
-  max-width: 1200px;
-  margin: 10px auto;
-  width: 100%;
-}
 .headers{
   display: flex;
   align-items: center;
@@ -871,8 +863,7 @@ hr{
   transition: all 0.1s ease-in-out;
 }
 
-.technology{
-  max-width: 1200px;
+.technology , .comic , .hevMayg , .bigSection4{
   width: 100%;
 }
 .blacky{
@@ -892,10 +883,6 @@ hr{
   visibility: visible;
 }
  
-.comic{
-  max-width: 1200px;
-  width: 100%;
-}
 .comic .part{
   width: 49%;
 }
@@ -917,6 +904,9 @@ hr{
   padding: 30px;
   background-color: black;
   color: rgb(181, 181, 181);
+}
+.watch .container{
+  max-width: 1200px;
 }
 .watch .headers{
   color: white;
@@ -1018,9 +1008,6 @@ svg:hover{
     background: none;
   }
   .bigSection1 .container {
-    margin: 0;
-  }
-  .bigSection1 .container {
     align-items: start;
   }
   .VoteSection{
@@ -1078,6 +1065,10 @@ svg:hover{
     flex-direction: column;
     align-items: center;
   }
+  .bigSection4 .container{
+    width: auto;
+  }
+
   .sec4Part1{
     width: 60%;
   }
@@ -1095,17 +1086,19 @@ svg:hover{
   .comic .part{
     width: 98%;
   }
-  .sec4Part1{
-    width: 80%;
+  .sec4Body{
+    gap: 20px;
   }
-  .sec4Part2{
-    height: fit-content;
+  .sec4Part1{
+    width: 70%;
+    height: 40vh;
   }
   .sec4Part2 {
-    width: 90%;
+    width: 70%;
+    gap: 20px;
   }
   .part2{
-    width: 80%;
+    width: 100%;
     height: 25vh;
   }
   .watch .part{
