@@ -1084,6 +1084,9 @@ svg:hover{
   .sec4Part2 {
     width: 90%;
   }
+  .part2{
+    height: 25vh;
+  }
 }
 @media (max-width:640px){
   .Story , .part{
@@ -1100,7 +1103,6 @@ svg:hover{
   }
   .sec4Part2 {
     width: 90%;
-    height: 25vh;
   }
   .part2{
     width: 80%;
