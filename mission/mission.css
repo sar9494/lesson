@@ -1,0 +1,116 @@
+body{
+    background-color: rgb(42, 43, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.out{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(52, 65, 69);
+    box-shadow: 0px 0px 6px 8px rgba(0, 0, 0, 0.7);
+}
+.gear{
+    background-color: rgb(8, 14, 14);
+    width: 160px;
+    height: 160px;
+    border: 1px rgb(125, 178, 178) solid ;
+    opacity: 0.8;
+    /* box-shadow: 0px 0px 3px 4px rgba(121, 228, 245, 0.7); */
+}
+.round{
+    border-radius: 50%;
+}
+.third{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 1px rgb(76, 255, 255);
+    overflow: hidden;
+    position: relative;
+}
+.fourth{
+    height: 200px;
+    width: 20px;
+    background-color: rgb(23, 58, 75);
+    position: absolute;
+    z-index: 0;
+    animation: turn 2s infinite ease-in;
+}
+.snd{
+    transform: rotate(45deg);
+}
+.trd{
+    transform: rotate(90deg);
+}
+.fth{
+    transform: rotate(-45deg);
+}
+.fifth{
+    height: 120px;
+    width: 120px;
+    background-color:rgb(23, 58, 75);
+    z-index: 1;
+    box-shadow: 0px 0px 4px 3px rgb(76, 255, 255);
+}
+.sixth{
+    height: 85px;
+    width: 85px;
+    background-color: white;
+}
+.shadowBox{
+    height: 75px;
+    width: 75px;
+    box-shadow: 0px 0px 10px 6px rgb(76, 255, 255);
+    background-color: white;
+}
+.seven{
+    background-color: rgb(23, 58, 75);
+    height: 60px;
+    width: 60px;
+    box-shadow: 0px 0px 5px 1px rgb(76, 255, 255);
+}
+.e8{
+    height: 55px;
+    width: 55px;
+    background-color: white;
+}
+.n9{
+    height: 45px;
+    width: 45px;
+    box-shadow: 0px 0px 10px 4px rgb(76, 255, 255);
+    background-color: white;
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+@keyframes turn{
+    0%{
+        rotate:0deg;
+    }
+    15%{
+        rotate:30deg; 
+    }
+    30%{
+        rotate:60deg; 
+    }
+    45%{
+        rotate:90deg;
+    }
+    60%{
+        rotate:120deg;
+    }
+    75%{
+        rotate:150deg;
+    }
+    90%{
+        rotate:180deg;
+    }
+    100%{
+        rotate:0deg;
+    }
+}
