@@ -114,3 +114,6 @@ body{
         rotate:0deg;
     }
 }
+@keyframes turn2{
+    transform:rotate();
+}
