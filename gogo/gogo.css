@@ -13,7 +13,7 @@ body {
 .container{
   width: 90%;
   max-width: 1200px;
-  margin: 0px auto;
+  margin: 25px auto;
   display: flex;
   flex-direction: column;
   padding: 0px 30px;
@@ -27,6 +27,9 @@ body {
   background: linear-gradient(white, rgb(243, 245, 246));
 }
 .bigSection1 .container {
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,6 +41,14 @@ img {
 }
 
 .header {
+  margin: 0px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+}
+.headerB {
   margin: 30px auto;
   width: 100%;
   display: flex;
@@ -123,6 +134,9 @@ button {
 }
 .boxHeader p{
   font-size: 12px;
+}
+.hidden-menu{
+  display: none;
 }
 
 .downMenu {
@@ -431,7 +445,7 @@ i {
 }
 
 .Sec3Body {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   margin-top: 30px;
@@ -521,7 +535,7 @@ i {
 }
 
 .Sec3News-img {
-  width: 50%;
+  width: 40%;
   height: 150px;
   border-radius: 5px;
   position: relative;
@@ -755,6 +769,7 @@ label:hover{
 .del{
   display: flex;
   align-items: center;
+  margin: 20px;
 }
 .sec4Part1:hover svg{
 transform: translate(10px);
@@ -785,7 +800,7 @@ hr{
 }
 .part2Text{
   width: 80%;
-  margin: 0px auto;
+  margin: 20px auto;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -890,7 +905,7 @@ hr{
   height: 200px;
 }
 .part-text{
-  height: 130px;
+  height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -900,7 +915,7 @@ hr{
 }
 
 .watch{
-  width: 92%;
+  width: 100%;
   padding: 30px;
   background-color: black;
   color: rgb(181, 181, 181);
@@ -1010,6 +1025,15 @@ svg:hover{
   .bigSection1 .container {
     align-items: start;
   }
+  .hidden-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: solid 1px rgb(187, 187, 187);
+    padding: 10px;
+    height: 42px;
+    width:40px;
+  }
   .VoteSection{
     order:-1;
   }
@@ -1020,6 +1044,9 @@ svg:hover{
     order: -2;
   }
   .header{
+  margin: 0px auto;
+  }
+  .headerB{
     padding: 5px;
     width: 25%;
     margin: 0;
@@ -1072,6 +1099,7 @@ svg:hover{
   }
   .part-text{
     font-size: 14px;
+    font-weight: 500;
   }
   .bigSection4 .sec4Body{
     flex-direction: column;
@@ -1083,6 +1111,7 @@ svg:hover{
 
   .sec4Part1{
     width: 60%;
+    height: 40vw;
   }
   .sec4Part2 {
     width: 90%;
