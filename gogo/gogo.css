@@ -120,7 +120,6 @@ button {
 }
 
 .boxHeaderIn {
-  width: 90px;
   margin: 5px;
   display: flex;
   justify-content: end;
@@ -1033,7 +1032,7 @@ svg:hover{
     border-left: solid 1px rgb(187, 187, 187);
     padding: 10px;
     height: 42px;
-    width:40px;
+    width:30px;
   }
   .VoteSection{
     order:-1;
@@ -1133,6 +1132,9 @@ svg:hover{
   }
   .sec4Body{
     gap: 20px;
+  }
+  .boxHeader{
+    width: 80px ;
   }
   .sec4Part1{
     width: 70%;
