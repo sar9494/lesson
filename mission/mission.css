@@ -40,7 +40,7 @@ body{
     background-color: rgb(23, 58, 75);
     position: absolute;
     z-index: 0;
-    animation: turn 2s infinite ease-in;
+    animation: turn 2s infinite linear;
 }
 .snd{
     transform: rotate(45deg);
@@ -115,5 +115,7 @@ body{
     }
 }
 @keyframes turn2{
-    transform:rotate();
+    to{
+    transform:rotate(360deg);
+    }
 }
