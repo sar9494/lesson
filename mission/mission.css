@@ -40,7 +40,7 @@ body{
     background-color: rgb(23, 58, 75);
     position: absolute;
     z-index: 0;
-    animation: turn 2s infinite linear;
+    animation: turn2 5s infinite linear;
 }
 .snd{
     transform: rotate(45deg);
@@ -92,30 +92,39 @@ body{
     0%{
         rotate:0deg;
     }
-    15%{
-        rotate:30deg; 
+    10%{
+        rotate:36deg;
+    }
+    20%{
+        rotate:72deg; 
     }
     30%{
-        rotate:60deg; 
+        rotate:108deg;
     }
-    45%{
-        rotate:90deg;
+    40%{
+        rotate:144deg;
     }
-    60%{
-        rotate:120deg;
-    }
-    75%{
-        rotate:150deg;
-    }
-    90%{
+    50%{
         rotate:180deg;
     }
+    60%{
+        rotate:216deg;
+    }
+    70%{
+        rotate:252deg;
+    }
+    80%{
+        rotate:288deg;
+    }
+    90%{
+        rotate:214deg;
+    }
     100%{
-        rotate:0deg;
+        rotate:360deg;
     }
 }
 @keyframes turn2{
     to{
-    transform:rotate(360deg);
+    rotate:1000deg;
     }
 }
